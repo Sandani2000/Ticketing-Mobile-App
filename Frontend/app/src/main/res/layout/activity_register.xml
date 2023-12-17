@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/yellow_back"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".activities.Register">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/main_logo"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an Account"
+        android:textColor="@color/DarkYellow"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="left"/>
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/Grey"
+        android:padding="12dp"
+        android:inputType="textCapWords"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:hint="Last Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/Grey"
+        android:inputType="textCapWords"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColor="@color/black"
+        android:textColorHint="@color/Grey"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColor="@color/black"
+        android:textColorHint="@color/Grey"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Type"
+        android:textSize="16sp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:labelFor="@id/spinnerAccountType"
+        android:layout_marginTop="20dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerAccountType"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:textColorHint="@color/Grey"
+        android:layout_height="48dp"
+        android:padding="10dp"
+        android:entries="@array/account_types" />
+
+    <EditText
+        android:id="@+id/editTextNIC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NIC"
+        android:textColor="@color/black"
+        android:textColorHint="@color/Grey"
+        android:inputType="text"
+        android:layout_marginTop="12dp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editTextPassport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Passport"
+        android:textColor="@color/black"
+        android:textColorHint="@color/Grey"
+        android:inputType="text"
+        android:layout_marginTop="12dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/idBTNRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/DarkYellow"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? "
+        android:textColor="@color/DarkYellow"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/loginLink"
+        android:layout_width="104dp"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:onClick="openLoginScreen"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="Sign In"
+        android:textColor="@color/lightBlue"
+        android:textSize="16sp" />
+</LinearLayout>

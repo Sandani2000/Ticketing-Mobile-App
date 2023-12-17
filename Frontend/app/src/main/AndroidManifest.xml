@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_icon"
+        android:label="Ticketing"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CSSETicketingMobileApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.RegisterPassenger"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ChooseRole"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RegisterTicketInspector"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MyAccount"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Home"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ViolationReport"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Login"
+            android:exported="false" />
+        <activity
+            android:name=".activities.HomeTicketInspector"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ScanQR"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Register"
+            android:exported="false" />
+        <activity
+            android:name=".activities.GenerateQR"
+            android:exported="false" />
+        <activity
+            android:name=".activities.HomePassenger"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
